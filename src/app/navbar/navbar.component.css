@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #4D1919;
+  color: white;
+}
+
+.navbar h1 {
+  color: #E79C39;
+}
+
+.navbar-header {
+  text-align: center;
+}
+
+.navbar .btn {
+  background-color: #C9AF5E;
+}
