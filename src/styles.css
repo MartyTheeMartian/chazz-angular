@@ -7,6 +7,135 @@ body {
   color: black;
 }
 
+.navbar {
+  background-color: #4D1919;
+  color: white;
+}
+
+.navbar h1 {
+  color: #E79C39;
+}
+
+.navbar .btn {
+  background-color: #C9AF5E;
+}
+
+#dropdowns .btn, #player .btn, #cheeses .btn {
+  background-color: #4D1919;
+}
+
+.navbar-header {
+  text-align: center;
+}
+
+.dropdown {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dropdown ul {
+  text-align: center !important;
+}
+
+.button, .dropdown-menu{
+  margin:10px auto;
+}
+
+.dropdown-menu{
+  width:200px;
+  left:50%;
+  margin-left:-100px;
+}
+
+#right-nav {
+  text-align: right;
+}
+
+#left-nav {
+  text-align: left;
+}
+
+#right-nav button, #left-nav button {
+  margin: 0 10px;
+}
+
 .btn {
   color: white;
+}
+
+#dropdowns, #tasted-top, #login{
+  height: 120px;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+#dropdowns p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#cheeses, #tasted-main {
+  height: 390px;
+  margin-top: 16px;
+}
+
+#player {
+  height: 390px;
+}
+
+#tasted-top {
+  text-align: center;
+  padding-top: 40px;
+}
+
+#tasted-top h2 {
+  font-size: 3em;
+}
+
+#tasted-main {
+  text-align: center;
+}
+
+#tasted-main h2 {
+  margin-top: 40px;
+}
+
+.cheese {
+  height: 140px;
+  text-align: center;
+}
+
+.cheese img {
+  width: 100px;
+  margin-bottom: 12px;
+}
+
+.removed-cheese img {
+  width: 50px;
+}
+
+.removed-cheese {
+  text-align: center;
+}
+
+.cheese:nth-of-type(-n + 2) {
+  margin-top: 4px;
+}
+
+.cheese:nth-of-type(n + 3) {
+  margin-top: 60px;
+}
+
+.cheese btn {
+  height: 2px !important;
+}
+
+#login {
+  text-align: center;
+}
+
+.login-field {
+  display: inline-block;
+  margin: 20px 20px 0 0;
 }

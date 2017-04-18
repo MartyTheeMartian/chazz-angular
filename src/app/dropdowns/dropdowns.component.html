@@ -1,0 +1,37 @@
+<div class="row" id="dropdowns">
+
+  <p>
+    Please Specify Your Preferred Animal And Firmness To Get Cheese Recommendations While You Enjoy Jazz
+  </p>
+
+  <div class="dropdown col-md-6">
+    <div class ="btn-group" dropdown>
+      <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+        Animal <span class="caret"></span>
+      </button>
+      <ul *dropdownMenu class="dropdown-menu" role="menu">
+        <li role="menuitem"><a class="dropdown-item" href="">Cow</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="">Goat</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="">Sheep</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="">Buffalo</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="dropdown col-md-6">
+    <div class ="btn-group" dropdown>
+      <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+        Firmness <span class="caret"></span>
+      </button>
+      <ul *dropdownMenu class="dropdown-menu" role="menu">
+        <li role="menuitem"><a class="dropdown-item" href="">Hard</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="">Semi-Hard</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="">Semi-Soft</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="">Soft</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
