@@ -14,9 +14,12 @@ body {
 
 .navbar h1 {
   color: #E79C39;
+  text-align: center;
+  margin-top: 16px;
 }
 
 .navbar .btn {
+  margin-top: 10px;
   background-color: #C9AF5E;
 }
 
@@ -49,10 +52,12 @@ body {
 }
 
 #right-nav {
+  margin-top: 15px;
   text-align: right;
 }
 
 #left-nav {
+  margin-top: 15px;
   text-align: left;
 }
 

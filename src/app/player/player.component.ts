@@ -26,7 +26,6 @@ export class PlayerComponent implements OnInit {
     this.count = -1;
     this.playlists = [];
     this.url = 'https://embed.spotify.com/?uri=';
-    this.spotify = sanitizer.bypassSecurityTrustResourceUrl('https://embed.spotify.com/?uri=spotify:user:gita1503:playlist:2qkXmULVYKfaQVLYQiuMJA');
   }
 
   getSpotify() {
@@ -59,7 +58,7 @@ export class PlayerComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.spotify = this.sanitizer.bypassSecurityTrustResourceUrl('https://embed.spotify.com/?uri=spotify:user:gita1503:playlist:2qkXmULVYKfaQVLYQiuMJA') ;
+    this.spotify = this.sanitizer.bypassSecurityTrustResourceUrl('https://embed.spotify.com/?uri=spotify:user:gita1503:playlist:2qkXmULVYKfaQVLYQiuMJA');
     this.getSpotify();
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { DropdownsComponent } from '../dropdowns/dropdowns.component';
 
 @Component({
   selector: 'app-cheeses',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cheeses.component.css']
 })
 export class CheesesComponent implements OnInit {
+
+  // Cheeses = DropdownsComponent;
 
   constructor() { }
 

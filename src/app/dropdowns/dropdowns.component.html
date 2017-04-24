@@ -5,30 +5,52 @@
   </p>
 
   <div class="dropdown col-md-6">
-    <div class ="btn-group" dropdown>
+    <div class="btn-group" dropdown>
       <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
-        Animal <span class="caret"></span>
+        {{ animal }} <span class="caret"></span>
       </button>
       <ul *dropdownMenu class="dropdown-menu" role="menu">
-        <li role="menuitem"><a class="dropdown-item" href="">Cow</a></li>
-        <li role="menuitem"><a class="dropdown-item" href="">Goat</a></li>
-        <li role="menuitem"><a class="dropdown-item" href="">Sheep</a></li>
-        <li role="menuitem"><a class="dropdown-item" href="">Buffalo</a>
+        <li role="menuitem">
+          <a class="dropdown-item" href="" (click)="onAnimalSelection($event)" >Cow</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="" (click)="onAnimalSelection($event)" >Goat</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="" (click)="onAnimalSelection($event)" >Sheep</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="" (click)="onAnimalSelection($event)" >Buffalo</a>
+        </li>
+        <li class="divider dropdown-divider" [hidden]="animalReset"></li>
+        <li role="menuitem" [hidden]="animalReset">
+          <a class="dropdown-item" href="" (click)="onAnimalSelection($event)"  >Reset</a>
         </li>
       </ul>
     </div>
   </div>
 
   <div class="dropdown col-md-6">
-    <div class ="btn-group" dropdown>
+    <div class="btn-group" dropdown>
       <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
-        Firmness <span class="caret"></span>
+        {{ firmness }} <span class="caret"></span>
       </button>
       <ul *dropdownMenu class="dropdown-menu" role="menu">
-        <li role="menuitem"><a class="dropdown-item" href="">Hard</a></li>
-        <li role="menuitem"><a class="dropdown-item" href="">Semi-Hard</a></li>
-        <li role="menuitem"><a class="dropdown-item" href="">Semi-Soft</a></li>
-        <li role="menuitem"><a class="dropdown-item" href="">Soft</a>
+        <li role="menuitem">
+          <a class="dropdown-item" href="" (click)="onFirmnessSelection($event)" >Hard</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="" (click)="onFirmnessSelection($event)" >Semi-Hard</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="" (click)="onFirmnessSelection($event)" >Semi-Soft</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="" (click)="onFirmnessSelection($event)" >Soft</a>
+        </li>
+        <li class="divider dropdown-divider" [hidden]="firmnessReset" ></li>
+        <li role="menuitem" [hidden]="firmnessReset" >
+          <a class="dropdown-item" href="" (click)="onFirmnessSelection($event)" >Reset</a>
         </li>
       </ul>
     </div>
