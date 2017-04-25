@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import arrayShuffler from '../../helpers/array-shuffler';
+import arrayShuffler from '../helpers/array-shuffler';
 
 @Component({
   selector: 'app-dropdowns',
@@ -24,6 +24,7 @@ export class DropdownsComponent implements OnInit {
     // this.firmnessCheeses = firmnessCheeses;
   }
 
+  // I would like to see this call moved to a service and injected using dependency injection.
   getAnimal(animal) {
     const animalURL = 'http://cheeswhiz.herokuapp.com/api/cheese/animal/';
     this.http.get(animalURL + animal)
@@ -34,6 +35,7 @@ export class DropdownsComponent implements OnInit {
       });
   }
 
+  // I would like to see this call moved to a service and injected using dependency injection.
   getFirmness(firmness) {
     const firmnessURL = 'http://cheeswhiz.herokuapp.com/api/cheese/firmness/';
     this.http.get(firmnessURL + firmness)
